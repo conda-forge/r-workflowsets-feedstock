@@ -1,4 +1,4 @@
-{% set version = '0.0.1' %}
+{% set version = "0.0.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/workflowsets_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/workflowsets/workflowsets_{{ version }}.tar.gz
-  sha256: 57b041931c13403a6f435f5babba482f3e1fef57d34ce4479f0bc223b78e81e0
+  sha256: c05346ea5d0e1f71eec66ae3cdf6817d0f5037a9797e7c326033de9eaa16f94f
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -62,11 +62,8 @@ test:
 about:
   home: https://github.com/tidymodels/workflowsets, https://workflowsets.tidymodels.org
   license: MIT
-  summary: A workflow is a combination of a model and preprocessors (e.g, a formula, recipe,
-    etc.) (Kuhn and Silge (2021) <https://www.tmwr.org/>). In order to try different
-    combinations of these, an object can be created that contains many workflows. There
-    are functions to create workflows en masse as well as training them and visualizing
-    the results.
+  summary: A workflow is a combination of a model and preprocessors (e.g, a formula, recipe, etc.) (Kuhn and Silge (2021) <https://www.tmwr.org/>). In order to try different combinations of these, an object can be created that contains many workflows. There are functions to create workflows en masse as well as training them
+    and visualizing the results.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
