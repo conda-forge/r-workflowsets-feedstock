@@ -1,11 +1,11 @@
-About r-workflowsets
-====================
+About r-workflowsets-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-workflowsets-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/tidymodels/workflowsets, https://workflowsets.tidymodels.org
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-workflowsets-feedstock/blob/main/LICENSE.txt)
 
 Summary: A workflow is a combination of a model and preprocessors (e.g, a formula, recipe, etc.) (Kuhn and Silge (2021) <https://www.tmwr.org/>). In order to try different combinations of these, an object can be created that contains many workflows. There are functions to create workflows en masse as well as training them and visualizing the results.
 
