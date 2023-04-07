@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/workflowsets_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/workflowsets/workflowsets_{{ version }}.tar.gz
-  sha256: 186b9de841735391ef82500f5a9eff8f04c70181789230cb44505a3c4d05928b
+  sha256: 11ae3a3d2122cd923b3ce14738b7ae66d5a3b4bbbbf85323c512d61d3a1568e7
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
