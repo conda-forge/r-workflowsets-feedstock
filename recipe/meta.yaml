@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/workflowsets_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/workflowsets/workflowsets_{{ version }}.tar.gz
-  sha256: a69fb8f75d4187fe8143ef433236ad9da103c0a1155f3ad76e8d1d0ddbfa6cd6
+  sha256: db0f138bdca0aba0b3d15caac4fefda81d0d98796560cc80d8e761028de935b6
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
